@@ -3,7 +3,9 @@ package com.eneskayiklik.demofeed.ui
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.eneskayiklik.demofeed.R
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
