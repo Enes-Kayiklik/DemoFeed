@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Demo Feed</string>
+    <string name="show_all">SHOW ALL</string>
+    <string name="demo_feed">DEMO FEED</string>
 </resources>
