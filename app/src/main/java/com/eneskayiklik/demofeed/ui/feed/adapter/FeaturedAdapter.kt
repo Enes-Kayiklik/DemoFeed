@@ -34,6 +34,8 @@ class FeaturedAdapter(
         RecyclerView.ViewHolder(binding.root) {
         fun bind(data: Featured) {
             binding.apply {
+                tvFeaturedCityName.text = data.city
+                tvFeaturedCountryName.text = data.country
                 Glide.with(itemView)
                     .load(data.imageUrl)
                     .listener(object : RequestListener<Drawable> {
