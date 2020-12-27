@@ -6,4 +6,9 @@
     <string name="countries">COUNTRIES</string>
     <string name="follow">Follow</string>
     <string name="close">Close</string>
+    <string name="timeline">Timeline</string>
+    <string name="search">Search</string>
+    <string name="handbag">Handbag</string>
+    <string name="notification">Notification</string>
+    <string name="profile">Profile</string>
 </resources>
