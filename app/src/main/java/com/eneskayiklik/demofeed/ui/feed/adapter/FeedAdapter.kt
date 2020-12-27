@@ -10,8 +10,10 @@ import com.bumptech.glide.load.DataSource
 import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
+import com.eneskayiklik.demofeed.R
 import com.eneskayiklik.demofeed.data.model.timeline.TimelineX
 import com.eneskayiklik.demofeed.databinding.OneLineFeedBinding
+import com.eneskayiklik.demofeed.utils.Functions.getDateAsString
 
 class FeedAdapter(
     private val timeline: List<TimelineX>
@@ -34,6 +36,13 @@ class FeedAdapter(
         RecyclerView.ViewHolder(binding.root) {
         fun bind(data: TimelineX) {
             binding.apply {
+                tvFeedTitle.text = data.title
+                tvFeedDesc.text = "${data.countryCount} ".plus(
+                    this.root.context.resources.getString(
+                        R.string.countries
+                    )
+                )
+                tvFeedDaysAgo.text = data.date.toLong().getDateAsString()
                 Glide.with(itemView)
                     .load(data.imageUrl)
                     .listener(object : RequestListener<Drawable> {
