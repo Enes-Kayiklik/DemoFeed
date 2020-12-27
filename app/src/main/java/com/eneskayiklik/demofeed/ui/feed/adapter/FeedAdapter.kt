@@ -11,12 +11,14 @@ import com.bumptech.glide.load.engine.GlideException
 import com.bumptech.glide.request.RequestListener
 import com.bumptech.glide.request.target.Target
 import com.eneskayiklik.demofeed.R
+import com.eneskayiklik.demofeed.data.model.timeline.Mention
 import com.eneskayiklik.demofeed.data.model.timeline.TimelineX
 import com.eneskayiklik.demofeed.databinding.OneLineFeedBinding
 import com.eneskayiklik.demofeed.utils.Functions.getDateAsString
 
 class FeedAdapter(
-    private val timeline: List<TimelineX>
+    private val timeline: List<TimelineX>,
+    private val onMentionClick: (List<Mention>) -> Unit
 ) : RecyclerView.Adapter<FeedAdapter.CustomViewHolder>() {
     override fun getItemCount(): Int = timeline.size
 
@@ -34,7 +36,9 @@ class FeedAdapter(
 
     inner class CustomViewHolder(private val binding: OneLineFeedBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
         fun bind(data: TimelineX) {
+            val overlapAdapter = OverlapAdapter(3, 50)
             binding.apply {
                 tvFeedTitle.text = data.title
                 tvFeedDesc.text = "${data.countryCount} ".plus(
@@ -43,6 +47,13 @@ class FeedAdapter(
                     )
                 )
                 tvFeedDaysAgo.text = data.date.toLong().getDateAsString()
+                recyclerViewLiked.adapter = overlapAdapter
+                overlapAdapter.addAll(data.mentions)
+                overlapAdapter.addAnimation = true
+                root.setOnClickListener {
+                    if (data.mentions.isNotEmpty())
+                        onMentionClick(data.mentions)
+                }
                 Glide.with(itemView)
                     .load(data.imageUrl)
                     .listener(object : RequestListener<Drawable> {
@@ -66,8 +77,7 @@ class FeedAdapter(
                             progressBarLoadingFeed.visibility = View.GONE
                             return false
                         }
-                    })
-                    .into(this.imgFeedPhoto)
+                    }).into(this.imgFeedPhoto)
             }
         }
     }

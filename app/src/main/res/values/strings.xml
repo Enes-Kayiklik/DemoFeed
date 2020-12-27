@@ -4,4 +4,6 @@
     <string name="demo_feed">DEMO FEED</string>
     <string name="featured">Featured</string>
     <string name="countries">COUNTRIES</string>
+    <string name="follow">Follow</string>
+    <string name="close">Close</string>
 </resources>
