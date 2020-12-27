@@ -8,4 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="show_all_button_back">#E9E9EC</color>
+    <color name="white_transparent">#55FFFFFF</color>
+    <color name="color_separator">#8f92a1</color>
+    <color name="follow_button_color">#9923ff</color>
 </resources>

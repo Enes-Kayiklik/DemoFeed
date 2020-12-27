@@ -5,6 +5,6 @@ data class TimelineX(
     val date: String,
     val id: String,
     val imageUrl: String,
-    val mentions: List<Mention>,
+    val mentions: ArrayList<Mention>,
     val title: String
 )

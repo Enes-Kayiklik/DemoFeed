@@ -74,6 +74,24 @@
         android:layout_height="28dp"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:background="@drawable/bookmark_button_back"
+        android:background="@drawable/white_transparent_back"
         android:src="@drawable/ic_more" />
+
+    <FrameLayout
+        android:id="@+id/rootLayoutLiked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/white_transparent_back"
+        android:elevation="16dp"
+        android:padding="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewLiked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </FrameLayout>
 </androidx.cardview.widget.CardView>
