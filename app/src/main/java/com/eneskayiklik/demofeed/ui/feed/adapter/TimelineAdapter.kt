@@ -42,7 +42,7 @@ class TimelineAdapter(
             binding.apply {
                 timeline?.let { data ->
                     tvFeedTitle.text = data.title
-                    tvFeedDesc.text = "${data.countryCount} ".plus(
+                    tvFeedDesc.text = "${data.countryCount}".plus(
                         this.root.context.resources.getString(
                             R.string.countries
                         )
