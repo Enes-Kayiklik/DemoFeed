@@ -22,7 +22,7 @@ class OverlapAdapter(
         RecyclerView.ViewHolder(binding.root) {
         fun bind(mention: Mention?) {
             mention?.let {
-                if (isLastVisibleItemItem(adapterPosition)) {
+                if (isLastVisibleItemItem(bindingAdapterPosition)) {
                     val drawable = TextDrawable.builder()
                         .beginConfig()
                         .textColor(Color.WHITE)
