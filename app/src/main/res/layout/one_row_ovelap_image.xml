@@ -5,6 +5,6 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imgFeedMention"
-        android:layout_width="28dp"
-        android:layout_height="28dp" />
+        android:layout_width="@dimen/small_image_button_size"
+        android:layout_height="@dimen/small_image_button_size" />
 </FrameLayout>

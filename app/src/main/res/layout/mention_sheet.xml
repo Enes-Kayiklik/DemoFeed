@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="16dp"
-    android:background="#00FFFFFF"
     android:orientation="vertical"
     app:behavior_peekHeight="0dp"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
@@ -14,16 +13,10 @@
         android:id="@+id/recyclerViewMention"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/white"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
     <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        style="@style/MaterialButton"
         android:layout_margin="16dp"
-        android:backgroundTint="@color/white"
-        android:text="@string/close"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        app:cornerRadius="25dp" />
+        android:text="@string/close" />
 </LinearLayout>

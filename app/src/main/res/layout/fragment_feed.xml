@@ -19,11 +19,9 @@
             android:padding="16dp">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/core_sans_c_55"
+                style="@style/TitleText"
                 android:text="@string/featured"
-                android:textSize="16sp" />
+                android:textSize="@dimen/small_title" />
 
             <include
                 layout="@layout/show_all_button"

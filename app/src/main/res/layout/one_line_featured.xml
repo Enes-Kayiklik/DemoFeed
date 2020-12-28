@@ -10,20 +10,22 @@
         android:id="@+id/imgFeaturedPhoto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:contentDescription="@string/featured_image"
         android:scaleType="centerCrop" />
 
     <ProgressBar
         android:id="@+id/progressBarLoading"
-        android:layout_width="15dp"
-        android:layout_height="15dp"
+        android:layout_width="@dimen/progress_size"
+        android:layout_height="@dimen/progress_size"
         android:layout_gravity="center" />
 
     <ImageButton
-        android:layout_width="28dp"
-        android:layout_height="28dp"
+        android:layout_width="@dimen/small_image_button_size"
+        android:layout_height="@dimen/small_image_button_size"
         android:layout_gravity="end"
         android:layout_margin="12dp"
         android:background="@drawable/bookmark_button_back"
+        android:contentDescription="@string/featured_bookmark"
         android:src="@drawable/ic_bookmark" />
 
     <LinearLayout

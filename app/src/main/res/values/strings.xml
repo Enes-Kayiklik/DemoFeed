@@ -1,14 +1,24 @@
 <resources>
     <string name="app_name">Demo Feed</string>
+
     <string name="show_all">SHOW ALL</string>
     <string name="demo_feed">DEMO FEED</string>
     <string name="featured">Featured</string>
     <string name="countries">COUNTRIES</string>
+
     <string name="follow">Follow</string>
     <string name="close">Close</string>
+
     <string name="timeline">Timeline</string>
     <string name="search">Search</string>
     <string name="handbag">Handbag</string>
     <string name="notification">Notification</string>
     <string name="profile">Profile</string>
+
+
+    <string name="feed_image_desc">Feed Image</string>
+    <string name="dot">Dot</string>
+    <string name="feed_more_desc">Feed More</string>
+    <string name="featured_bookmark">Featured Bookmark</string>
+    <string name="featured_image">Featured Image</string>
 </resources>
