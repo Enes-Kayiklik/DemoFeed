@@ -14,14 +14,10 @@
             style="@style/MyActionBar">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
+                style="@style/TitleText"
                 android:letterSpacing="0.08"
                 android:lineSpacingExtra="2sp"
-                android:text="@string/demo_feed"
-                android:textSize="18sp" />
+                android:text="@string/demo_feed" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
