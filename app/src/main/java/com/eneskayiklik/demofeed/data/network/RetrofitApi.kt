@@ -11,6 +11,6 @@ interface RetrofitApi {
 
     @GET("timeline")
     suspend fun getTimeline(
-        @Query("page") page: Int = (1..2).random()
+        @Query("page") page: Int = 1
     ): Timeline
 }

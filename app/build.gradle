@@ -83,4 +83,8 @@ dependencies {
 
     // Circle image view
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Paging
+    def paging_version = "3.0.0-alpha11"
+    implementation "androidx.paging:paging-runtime-ktx:$paging_version"
 }

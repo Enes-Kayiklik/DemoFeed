@@ -6,6 +6,6 @@
 
     <fragment
         android:id="@+id/feedFragment"
-        android:name="com.eneskayiklik.demofeed.ui.feed.fragment.FeedFragment"
+        android:name="com.eneskayiklik.demofeed.ui.feed.fragment.TimelineFragment"
         android:label="FeedFragment" />
 </navigation>
