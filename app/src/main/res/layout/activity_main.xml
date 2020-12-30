@@ -17,5 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        android:layout_margin="16dp"
+        android:background="@drawable/bookmark_button_back"
         app:menu="@menu/main_bottom_menu" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
